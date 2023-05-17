@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dotKonnekt.tests.BlogPageTest">
+      <class name="com.dotKonnektMobile.tests.HomePageTest">
         <methods>
-          <include name="teardown"/>
-          <include name="BlogPage_AddCommentinCommentSeection_dotFashion"/>
+          <include name="HomePage_UserFunctionalityVerification" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="HomePage_NewArrival" invocation-numbers="0"/>
+          <include name="HomePage_SendAMessageFunctionalityGuestUser" invocation-numbers="0"/>
           <include name="flush"/>
+          <include name="HomePage_SearchFucntionalityVerification" invocation-numbers="0"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.dotKonnekt.tests.BlogPageTest -->
+      </class> <!-- com.dotKonnektMobile.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
