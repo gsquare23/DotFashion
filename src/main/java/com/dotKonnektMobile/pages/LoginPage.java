@@ -18,17 +18,16 @@ import com.dotKonnektMobile.utility.Log;
 public class LoginPage extends BaseClass {
 
 	LoginPage loginPage;
+	String clickButton=  "//*[name()='svg' and @data-testid='SearchOutlinedIcon']";
 	String searchBox = "//input[@placeholder='Search']";
-	String clickButton=  "//div[@class='MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1a6giau']//*[name()='svg']";
-	String welcomeTxt1 = "(//p[@class='MuiTypography-root MuiTypography-body1 css-sgxgum'])[1]";
-	String accessTxt ="(//p[@class='MuiTypography-root MuiTypography-body1 css-1yt7wtf'])[1]";
+	String welcomeTxt1 = "(//p[@id='sg-iconsHeaderWelcomeTitle'])[1]";
+	String accessTxt ="(//p[@id='sg-iconsHeaderWelcomeDesc'])[1]";
 	String loginTxt = "(//button[normalize-space()='LOGIN/SIGNUP'])[1]";
-	String categoryElements = "//div[@class='MuiBox-root css-1y4n82h']/button";
-	String Author = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-1r6qczh']";
-	String P_Date = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-3odfiv']";
-	String bd_Home = "(//li[@class='MuiBreadcrumbs-li'])/a";
+	String bd_Home = "//a[@id='sg-breadcrum0 sg-BreadCrumbLink']";
 	String loginPageTxt = "//input[@placeholder='Email']";
 	String likeIcon = "(//*[name()='svg'][@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-fwkm60'])[1]";
+	
+	
 	@FindBy(name = "email")
 	WebElement username;
 	
@@ -47,13 +46,13 @@ public class LoginPage extends BaseClass {
 	@FindBy(xpath = "//div[@class='MuiTypography-root MuiTypography-body1 css-lmqqn1']")
 	WebElement incrtMsg;
 	
-	@FindBy(xpath = "//div[@class='MuiTypography-root MuiTypography-body1 css-1svf6t0']")
+	@FindBy(xpath = "//div[@class='MuiTypography-root MuiTypography-body1 css-kwmy95']")
 	WebElement welcomeMsg;
 	
 	@FindBy(name = "checkedB")
 	WebElement checkbox;
 	
-	@FindBy(xpath = "//div[@class='MuiTypography-root MuiTypography-body1 css-od1sh9']")
+	@FindBy(xpath = "//div[@class='MuiTypography-root MuiTypography-body1 css-1byb33m']")
 	WebElement welcomeDescription;
 	
 	@FindBy(xpath = "//div[@class='recaptcha-checkbox-border']")

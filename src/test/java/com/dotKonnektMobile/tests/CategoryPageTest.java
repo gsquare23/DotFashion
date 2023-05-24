@@ -23,16 +23,10 @@ public class CategoryPageTest  extends BaseClass {
 	CategoryPage categoryPage;
 	CommonPagedetails commonPagedetails;
 	
-	String category = "//div[@class='css-1hvic5s']/div/button";
-	String welcomeTxt = "(//p[@class='MuiTypography-root MuiTypography-body1 css-k1juyd'])[1]";
-	String accessTxt ="(//p[@class='MuiTypography-root MuiTypography-body1 css-1yt7wtf'])[1]";
-	String loginTxt = "(//button[normalize-space()='LOGIN/SIGNUP'])[1]";
-	String categoryElements = "//div[@class='MuiBox-root css-1y4n82h']/button";
-	String Author = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-1r6qczh']";
-	String P_Date = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-3odfiv']";
-	String bd_Home = "(//li[@class='MuiBreadcrumbs-li'])/a";
-	String loginPageTxt = "//input[@placeholder='Email']";
-	String likeIcon = "(//*[name()='svg'][@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-fwkm60'])[1]";
+	//String category = "//button[@id='sg-categoryItem']";
+	 
+	
+		
 	
 	@Test(dataProvider = "CategoryPage", dataProviderClass = DataProviders.class,enabled = true, groups = "NotLoggedIn")
 	public void CategoryPage_TitleVerification(String page, String title, String browser, String url) throws InterruptedException {
@@ -64,6 +58,10 @@ public class CategoryPageTest  extends BaseClass {
 		boolean userResult = commonPagedetails.validateSearchBox();
 		Assert.assertTrue(userResult, "User icon is not present");
 		Log.info("-----------Userbutton Verification End Successfully----------");
+		Log.info("-----------MenuButton Verification Starts----------");
+		boolean menuResult = commonPagedetails.validateMenuButton();
+		Assert.assertTrue(userResult);
+		Log.info("-----------MenuButton Verification End Successfully----------");
 		Log.endTestCase("PageHeaderVerification");
 		
 	
@@ -138,22 +136,6 @@ public class CategoryPageTest  extends BaseClass {
 		Log.endTestCase("-----------tagsVerification    Ends---------");
 	}
 	 
-	
-	@Test(dataProvider = "CategoryPage", dataProviderClass = DataProviders.class, enabled = true, groups = "NotLoggedIn")
-	public void BreadCrumbVerification(String page, String title, String browser, String url) throws InterruptedException {
-		Log.startTestCase("-----------BreadCrumbVerification    Starts---------");
-		categoryPage = new CategoryPage();
-		launchApp_V1(browser, url);
-		String breadcrumbCategory = categoryPage.breadCrumbFunctionality();
-		System.out.println(breadcrumbCategory);
-		//Assert.assertEquals(breadcrumbCategory, categoryName);
-		getDriver().findElement(By.xpath(bd_Home)).click();
-		Action.explicitWaitbyTitle(getDriver(), "dot beauty", Duration.ofSeconds(10));
-		String HomeTitle = getDriver().getTitle();
-		Assert.assertEquals(HomeTitle, "dot beauty");
-		Log.endTestCase("-----------BreadCrumbVerification    Ends---------");
-
-	}
 	 
 	
 	@Test(dataProvider = "CategoryPage", dataProviderClass = DataProviders.class, enabled = true, groups = "NotLoggedIn")

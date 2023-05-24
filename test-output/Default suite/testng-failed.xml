@@ -5,12 +5,9 @@
     <classes>
       <class name="com.dotKonnektMobile.tests.HomePageTest">
         <methods>
-          <include name="HomePage_UserFunctionalityVerification" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="HomePage_NewArrival" invocation-numbers="0"/>
-          <include name="HomePage_SendAMessageFunctionalityGuestUser" invocation-numbers="0"/>
+          <include name="tearDown"/>
           <include name="flush"/>
-          <include name="HomePage_SearchFucntionalityVerification" invocation-numbers="0"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- com.dotKonnektMobile.tests.HomePageTest -->

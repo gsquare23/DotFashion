@@ -1,0 +1,14 @@
+2023-05-24 15:12:47 INFO  Log:10 - =====================================HomePage_PageHeaderVerification TEST START=========================================
+2023-05-24 15:12:52 INFO  Log:22 - ChromeMobileBrowser Launch is successfully Completed
+2023-05-24 15:12:53 INFO  Log:22 - Successfully clicked on the newsLetter
+2023-05-24 15:12:53 INFO  Log:22 - -----------Logo Verification Starts----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------Logo Verification End successfully----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------SearchBox Verification Starts----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------SearchBox Verification End Successfully----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------Cartbutton Verification Starts----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------Cartbutton Verification End Successfully----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------Userbutton Verification Starts----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------Userbutton Verification End Successfully----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------MenuButton Verification Starts----------
+2023-05-24 15:12:53 INFO  Log:22 - -----------MenuButton Verification End Successfully----------
+2023-05-24 15:12:53 INFO  Log:15 - =====================================HomePage_PageHeaderVerification TEST END=========================================

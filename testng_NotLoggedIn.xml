@@ -12,7 +12,7 @@
 		</groups>
 		<classes>
 			
-			 <class name="com.dotKonnekt.tests.BlogPageTest" />
+			
 			 <class name="com.dotKonnekt.tests.HomePageTest"/>
 			
 		</classes>

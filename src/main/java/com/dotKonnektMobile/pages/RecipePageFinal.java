@@ -293,8 +293,15 @@ public class RecipePageFinal extends BaseClass {
 				listElements.add(webElement.getText());
 				count++;
 			}
+			
+			
 			System.out.println(listElements);
-			String category = "WOMEN,MEN";
+			String category = null;
+			if(getDriver().getCurrentUrl().contains("dotfashion")) {
+			 category = "WOMEN,MEN";}
+			else {
+				category = "SKIN,DIY RECIPES,DOLL UP";
+			}
 			 List<String> myList = new ArrayList<String>(Arrays.asList(category.split(",")));
 			 System.out.println(myList);
 			 if(listElements.containsAll(myList) && myList.containsAll(listElements)) {

@@ -20,25 +20,25 @@ import com.dotKonnektMobile.utility.Log;
 
 public class CategoryPage extends BaseClass{
 
-	String searchBox = "//input[@placeholder='Search']";
-	String clickButton=  "//div[@class='MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1a6giau']//*[name()='svg']";
-	String welcomeTxt1 = "(//p[@class='MuiTypography-root MuiTypography-body1 css-k1juyd'])[1]";
-	String accessTxt ="(//p[@class='MuiTypography-root MuiTypography-body1 css-1yt7wtf'])[1]";
-	String loginTxt = "(//button[normalize-space()='LOGIN/SIGNUP'])[1]";
-	String categoryElements = "//div[@class='MuiBox-root css-1y4n82h']/button";
-	String Author = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-1r6qczh']";
-	String P_Date = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-3odfiv']";
-	String bd_Home = "(//li[@class='MuiBreadcrumbs-li'])/a";
-	String loginPageTxt = "//input[@placeholder='Email']";
-	String likeIcon = "(//*[name()='svg'][@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-fwkm60'])[1]";
+	//String searchBox = "//input[@placeholder='Search']";
+	//String clickButton=  "//div[@class='MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1a6giau']//*[name()='svg']";
+	//String welcomeTxt1 = "(//p[@class='MuiTypography-root MuiTypography-body1 css-k1juyd'])[1]";
+	//String accessTxt ="(//p[@class='MuiTypography-root MuiTypography-body1 css-1yt7wtf'])[1]";
+	//String loginTxt = "(//button[normalize-space()='LOGIN/SIGNUP'])[1]";
+	//String categoryElements = "//div[@class='MuiBox-root css-1y4n82h']/button";
+	//String Author = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-1r6qczh']";
+	//String P_Date = "//div[@class='MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 css-3odfiv']";
+	//String bd_Home = "//a[@id='sg-breadcrum0 sg-BreadCrumbLink']";
+	//String loginPageTxt = "//input[@placeholder='Email']";
+	//String likeIcon = "(//*[name()='svg'][@class='MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-fwkm60'])[1]";
 
 	public CategoryPage() {
 		PageFactory.initElements(getDriver(), this);
 	}
 	
 	
-	
-	String bd_Category = "//a[@class='MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-18zeukv']";
+	String bd_Home = "//a[@id='sg-breadcrum0 sg-BreadCrumbLink']";
+	String bd_Category = "(//a[@id='sg-breadcrum0 sg-BreadCrumbLink'])[3]";
 	public String breadCrumbFunctionality() {
 		String bd1text = getDriver().findElement(By.xpath(bd_Home)).getText();
 		Assert.assertEquals(bd1text, "Home");
@@ -47,8 +47,8 @@ public class CategoryPage extends BaseClass{
 		
 	}
 	;
-	String images1 = "//div[@class='MuiBox-root css-cgiybc']/span/img";
-	String imageDescription = "//div[@class='MuiBox-root css-cgiybc']//img[@alt='logo']";
+	String images1 = "//img[@id='sg-bannerImage']";
+	String imageDescription = "//p[@id='sg-bannerContentTitle']";
 	public void imageVerification() {
 		WebElement imageDes = getDriver().findElement(By.xpath(imageDescription));
 		Action.explicitWait(getDriver(), imageDes, Duration.ofSeconds(2));
@@ -165,7 +165,7 @@ public class CategoryPage extends BaseClass{
 		 }
 	}
 	
-	String subtabs  = "//div[@class='MuiTabs-flexContainer css-k008qs']/button";
+	String subtabs  = "//button[@id='sg-tabsComponentTab']";
 	public void subTabsverification() {
 		int count =0;
 		List<WebElement>  tabs =getDriver().findElements(By.xpath(subtabs));
@@ -191,12 +191,12 @@ public class CategoryPage extends BaseClass{
 	
 	
 	
-	 String allproduct ="//div[contains(@class,'css-i25sow')]";
-	String quickview = "//p[@class='MuiTypography-root MuiTypography-body1 css-14ohi1k']";
-	String discountedPrice = "//p[@class='MuiTypography-root MuiTypography-body1 css-1tva794']";
-	String actualPrice = "//div[@class='MuiTypography-root MuiTypography-body1 css-1jw05cp']";
-	String productsName = "//div[@class='MuiBox-root css-kgu7cg']";
-	String images  = "//div[@class='MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ho6dvz']/span/img";
+	 String allproduct ="//div[contains(@id,'sg-productCardWrapper')]";
+	String quickview = "//p[@id='sg-quickViewButton']";
+	String discountedPrice = "//p[@id='sg-productCardDisablePriceText']";
+	String actualPrice = "//div[@id='productCardContentPriceTile']";
+	String productsName = "//div[@id='sg-productCardContentTitle']";
+	String images  = "//img[@id='sg-productCardImage2']";
 	String carticon = "//*[name()='svg' and @data-testid='ShoppingCartOutlinedIcon']";
 	String wishlist = "//*[name()='svg' and @data-testid='FavoriteBorderOutlinedIcon']";
 	SoftAssert softAssert = new SoftAssert();
@@ -204,12 +204,14 @@ public class CategoryPage extends BaseClass{
 	public void newArrival() throws InterruptedException {
 		WebElement bodyText = getDriver().findElement(By.tagName("body"));
 		Log.info("Inside Body Tag");
-		if(bodyText.getText().contains("Filter by:")){
-			String filter = "//p[@class='MuiTypography-root MuiTypography-body1 css-1rmxet5']";
+		//System.out.println(bodyText.getText());
+		if(bodyText.getText().contains("FILTER + SORT")){
+			Log.info("hgjkdlld.");
+			String filter = "//p[@class='MuiTypography-root MuiTypography-body1 css-1r2mskm']";
 			WebElement filterBy = getDriver().findElement(By.xpath(filter));
 			Action.scrollByVisibilityOfElement(getDriver(), filterBy);
 			Log.info("Filter By is present");
-			String pagination = "(//div[@class='MuiBox-root css-efl1h4']//div[@class='MuiBox-root css-1sfz9yc']/nav/ul/li/button)";
+			String pagination = "(//nav[@id='sg-pagination'])[2]/ul/li/button";
 			List<WebElement> Pagination = getDriver().findElements(By.xpath(pagination));
 			
 			if(Pagination.size()>=3 ) {
@@ -382,11 +384,15 @@ public class CategoryPage extends BaseClass{
 			}
 		else {Assert.assertTrue(false, "Products are not present in the New Arrival Sections");}
 		}
+
+		else {System.out.println("No Products are available");}
+			
 		softAssert.assertAll();
+		
 	}
 		
 		
-		String subCateg = "(//div[contains(@class, 'css-j7qwjs')])/button";
+		String subCateg = "(//button[contains(@id, 'sg-verticalTabsTab2')])";
 		public void subCategories() {
 			List<WebElement> SubCategoriesValue =getDriver().findElements(By.xpath(subCateg));
 			if(SubCategoriesValue.size()==7) {
@@ -414,7 +420,7 @@ public class CategoryPage extends BaseClass{
 		
 		
 		String inspect = "//div[@class='MuiBox-root css-1y4n82h']";
-		String categoryElements1 = "//div[@class='MuiBox-root css-1y4n82h']/button";
+		String categoryElements1 = "//button[@id='sg-categoryItem']";
 		public void subCategoriesVerification() {
 			List<WebElement> menuList = getDriver().findElements(By.xpath(categoryElements1));
 		
@@ -444,12 +450,12 @@ public class CategoryPage extends BaseClass{
 		
 		
 		String bookmark ="//*[name()='svg' and @data-testid='BookmarkBorderIcon']";
-		String crumb = "//div[contains(@class,'css-9g2cf7')]/div[2]/div/p[1]";
-		String title = "//div[contains(@class,'css-9g2cf7')]/div[2]/div/p[2]";
-		String popularArticles = "//div[contains(@class,'css-9g2cf7')]/img";
+		String crumb = "//p[contains(@id,'sg-sideRepeatAuthorInfo')]";
+		String title = "//p[contains(@id,'sg-sideRepeatFeatureDesc')]";
+		String popularArticles = "//img[contains(@id,'sg-sideRepeatCardMedia')]";
 		String forwardicon = "(//*[name()='svg'][@data-testid='ArrowForwardIcon'])[2]";
 		String backwardicon = "(//*[name()='svg'][@data-testid='ArrowBackIcon'])";
-		String popularReadText = "(//p[contains(@class, 'css-j9wtq3')])";
+		String popularReadText = "(//p[contains(@id, 'sg-popularReadTitle')])";
 		public void popularReads () {
 			WebElement PopularReadsText = getDriver().findElement(By.xpath(popularReadText));
 			Assert.assertEquals(PopularReadsText.getText(), "Popular Reads");
@@ -481,12 +487,12 @@ public class CategoryPage extends BaseClass{
 			Log.info("Successfully verified the presence of the bookmark icon ");
 		}
 		
-		String readmore = "//button[contains(@class,'css-1qw6qfe')]";
-		String writtenBy = "//div[contains(@class,'css-90yzwr')]";
-		String bigImageDesc = "//div[contains(@class,'css-1u5x3pp')]/p/p";
-		String blogTitle = "//div[contains(@class,'css-5ltym6')]";
-		String bigImageTitle = "//div[contains(@class,'css-1tninrt')]";
-		String bigImage = "//div[contains(@class,'css-19qk1n6')]/img";
+		String readmore = "//button[contains(@id,'sg-featuredContentReadMoreButton')]";
+		String writtenBy = "//div[contains(@id,'sg-featuredContentBox2')]";
+		String bigImageDesc = "//p[contains(@id,'sg-featuredContentFeatureMainDesc')]/p";
+		String blogTitle = "//div[contains(@id,'sg-blogHeadTitle')]";
+		String bigImageTitle = "//div[contains(@id,'sg-featuredContentMainFeatureHeading')]";
+		String bigImage = "//img[contains(@id,'sg-featuredContentCardMedia')]";
 		public void bigImageBlog () {
 			WebElement BigImage = getDriver().findElement(By.xpath(bigImage));
 			Action.scrollByVisibilityOfElement(getDriver(), BigImage);
