@@ -5,8 +5,8 @@
     <classes>
       <class name="com.dotKonnektMobile.tests.HomePageTest">
         <methods>
-          <include name="HomePage_NewArrival" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="TitleVerification" invocation-numbers="0"/>
           <include name="flush"/>
           <include name="loadConfig"/>
         </methods>

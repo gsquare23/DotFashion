@@ -32,7 +32,7 @@ public class HomePageTest extends BaseClass{
 		commonPagedetails = new CommonPagedetails();
 		homePage = new HomePage();
 		launchApp_EB(browser, url);
-		homePage.NewsletterPopup__Alert();
+		//homePage.NewsletterPopup__Alert();
 		String actualTitle = commonPagedetails.getTitle();
 		System.out.println(actualTitle);
 		Assert.assertEquals(actualTitle, "dotfashion", "Title Not Verified");

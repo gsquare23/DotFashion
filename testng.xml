@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" configfailurepolicy="continue">
-<listeners>
-<listener class-name="com.dotKonnekt.utility.ListenersClass"></listener>
-</listeners>
+<suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-        <class name="com.dotKonnekt.tests.ProductPageTest"/>
-         
-</classes>
+      <class name="com.dotKonnektMobile.tests.RecipePage3"/>
+      <class name="com.dotKonnektMobile.tests.SearchPageTest"/>
+      <class name="com.dotKonnektMobile.tests.HomePageTest"/>
+      <class name="com.dotKonnektMobile.tests.LoginPageTest"/>
+      <class name="com.dotKonnektMobile.tests.BlogPageTest"/>
+      <class name="com.dotKonnektMobile.tests.RecipePageTest"/>
+      <class name="com.dotKonnektMobile.tests.CategoryPageTest"/>
+      <class name="com.dotKonnektMobile.tests.PageFooter"/>
+      <class name="com.dotKonnektMobile.tests.MyAccountPageTest"/>
+      <class name="com.dotKonnektMobile.tests.ExperienceBuilder_selectContentTest"/>
+      <class name="com.dotKonnektMobile.tests.ProductPageTest"/>
+      <class name="com.dotKonnektMobile.tests.CheckoutPageTest"/>
+      <class name="com.dotKonnektMobile.tests.DigitalProductPageTest"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

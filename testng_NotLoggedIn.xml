@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" configfailurepolicy="continue">
+<suite name="Suite">
+	
+	
 	<listeners>
-		<listener class-name="com.dotKonnekt.utility.ListenersClass"></listener>
-	</listeners>
-	<test thread-count="5" name="NotLoggedIn">
+		<listener class-name="com.dotKonnektMobile.utility.ListenersClass">
+			
+		</listener>	</listeners>
+	<test thread-count="5" name="Test">
 		<groups>
 			<run>
 				<include name="NotLoggedIn"></include>
 			</run>
 		</groups>
-		<classes>
-			
-			
-			 <class name="com.dotKonnekt.tests.HomePageTest"/>
-			
-		</classes>
-	</test> <!-- Test -->
+
+    <classes>
+      <class name="com.dotKonnektMobile.tests.HomePageTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

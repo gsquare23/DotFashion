@@ -728,4 +728,9 @@ public class HomePage extends BaseClass{
 		Log.info("Successfully clicked on the newsLetter");
 	}
 	
+	
+	public void onlyAlert() {
+		getDriver().findElement(By.xpath("//button[normalize-space()='Accept']")).click();
+	}
+	
 }

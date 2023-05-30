@@ -21,6 +21,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -99,6 +100,13 @@ public class BaseClass {
 			driver.set(new EdgeDriver());
 			getDriver().manage().window().maximize();
 		}
+		
+		
+		else if (browsername.contains("Safari")) {
+			WebDriverManager.safaridriver().setup();
+			driver.set(new SafariDriver());
+			getDriver().manage().window().maximize();
+		}
 
 		else if (browsername.contains("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -170,7 +178,15 @@ public class BaseClass {
 			getDriver().manage().window().setSize(d);
 			
 		}
-
+		
+		
+		else if (browsername.contains("Safari")) {
+			WebDriverManager.safaridriver().setup();
+		
+			driver.set(new SafariDriver());
+			getDriver().manage().window().maximize();
+		}
+		
 		else if (browsername.contains("MicrosoftEdge")|| browsername.contains("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			//driver.set(new EdgeDriver());

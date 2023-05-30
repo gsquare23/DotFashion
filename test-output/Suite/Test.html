@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 24 13:02:22 IST 2023</td>
+<td>Started on:</td><td>Wed May 24 17:15:48 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>313 seconds (313984 ms)</td>
+<tr><td>Total time:</td><td>116 seconds (116893 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>LoggedIn </td>
+<td>Included groups:</td><td>NotLoggedIn </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,50 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection()'><b>RecipePage_AddCommentinCommentSeection</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/sugarcane-juice-black-wheat-muffins-cake, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Nithya mahindra, /07 Jan 2021/, Sugarcane juice black wheat muffins/cake, Yes,yes, Yes,yes</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 36.648
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [239ff8e7835068d42e78615fff82719d, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61692/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 239ff8e7835068d42e78615fff82719d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection(RecipePageTest.java:277)
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_NewArrival()'><b>HomePage_NewArrival</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	1Images are not present   expected [true] but found [false],
+	1 Actual Prices are not present  expected [true] but found [false]
+	at com.dotKonnektMobile.pages.HomePage.newArrival(HomePage.java:121)
+	at com.dotKonnektMobile.tests.HomePageTest.HomePage_NewArrival(HomePageTest.java:123)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1582991128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1582991128'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 36.648
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [239ff8e7835068d42e78615fff82719d, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61692/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 239ff8e7835068d42e78615fff82719d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection(RecipePageTest.java:277)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace47710680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace47710680'><pre>java.lang.AssertionError: The following asserts failed:
+	1Images are not present   expected [true] but found [false],
+	1 Actual Prices are not present  expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.dotKonnektMobile.pages.HomePage.newArrival(HomePage.java:121)
+	at com.dotKonnektMobile.tests.HomePageTest.HomePage_NewArrival(HomePageTest.java:123)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,157 +99,16 @@ Session ID: 239ff8e7835068d42e78615fff82719d
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>47</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
-<tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality()'><b>RecipePage_bookMarkIconFunctionality</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/fudgy-healthy-chocolate-squares-no-sugar-no-maida-no-dairy, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Wellcure, /05 Feb 2021/, Fudgy Healthy Chocolate Squares – no sugar, no maida, no dairy!, No, yes,no</td>
-<td><div><pre>java.lang.AssertionError: expected [76] but found [77]
-	at com.dotKonnekt.pages.RecipePageFinal.BookMarkIconfunctionality(RecipePageFinal.java:208)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality(RecipePageTest.java:296)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace426014054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace426014054'><pre>java.lang.AssertionError: expected [76] but found [77]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.dotKonnekt.pages.RecipePageFinal.BookMarkIconfunctionality(RecipePageFinal.java:208)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality(RecipePageTest.java:296)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>31</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
-<tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality()'><b>RecipePage_bookMarkIconFunctionality</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/sugarcane-juice-black-wheat-muffins-cake, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Nithya mahindra, /07 Jan 2021/, Sugarcane juice black wheat muffins/cake, Yes,yes, Yes,yes</td>
-<td><div><pre>java.lang.AssertionError: expected [19] but found [20]
-	at com.dotKonnekt.pages.RecipePageFinal.BookMarkIconfunctionality(RecipePageFinal.java:208)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality(RecipePageTest.java:296)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1694609669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1694609669'><pre>java.lang.AssertionError: expected [19] but found [20]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.dotKonnekt.pages.RecipePageFinal.BookMarkIconfunctionality(RecipePageFinal.java:208)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality(RecipePageTest.java:296)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>30</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
-<tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality()'><b>RecipePage_likeIconFunctionality</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/paneer-butter-masala-recipe, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Avitha P K, /20 Dec 2022/, Paneer Butter Masala Recipe, yes,yes, yes,no</td>
-<td><div><pre>java.lang.AssertionError: expected [1] but found [2]
-	at com.dotKonnekt.pages.RecipePageFinal.LikeIconfunctionality(RecipePageFinal.java:168)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality(RecipePageTest.java:308)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace334720373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace334720373'><pre>java.lang.AssertionError: expected [1] but found [2]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.dotKonnekt.pages.RecipePageFinal.LikeIconfunctionality(RecipePageFinal.java:168)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality(RecipePageTest.java:308)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -291,52 +121,33 @@ Session ID: 239ff8e7835068d42e78615fff82719d
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>24</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
 <tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection()'><b>RecipePage_AddCommentinCommentSeection</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/fudgy-healthy-chocolate-squares-no-sugar-no-maida-no-dairy, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Wellcure, /05 Feb 2021/, Fudgy Healthy Chocolate Squares – no sugar, no maida, no dairy!, No, yes,no</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.101
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_SearchFucntionalityVerification()'><b>HomePage_SearchFucntionalityVerification</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;dot beauty&quot;. Current title: &quot;dotfashion&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6bf848d26b66614e05247c6f9c63e23e, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61748}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61748/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bf848d26b66614e05247c6f9c63e23e
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection(RecipePageTest.java:277)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63793/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96e03bfcef062d503314251adf0d093c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dotKonnektMobile.actionDrivers.Action.explicitWaitbyTitle(Action.java:784)
+	at com.dotKonnektMobile.pages.CommonPagedetails.validateSeachFunctionality(CommonPagedetails.java:109)
+	at com.dotKonnektMobile.tests.HomePageTest.HomePage_SearchFucntionalityVerification(HomePageTest.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace978881375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace978881375'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.101
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1033400986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1033400986'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;dot beauty&quot;. Current title: &quot;dotfashion&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6bf848d26b66614e05247c6f9c63e23e, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61748}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61748/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bf848d26b66614e05247c6f9c63e23e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection(RecipePageTest.java:277)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63793}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63793/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 96e03bfcef062d503314251adf0d093c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dotKonnektMobile.actionDrivers.Action.explicitWaitbyTitle(Action.java:784)
+	at com.dotKonnektMobile.pages.CommonPagedetails.validateSeachFunctionality(CommonPagedetails.java:109)
+	at com.dotKonnektMobile.tests.HomePageTest.HomePage_SearchFucntionalityVerification(HomePageTest.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -345,16 +156,16 @@ Session ID: 6bf848d26b66614e05247c6f9c63e23e
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -366,24 +177,34 @@ Session ID: 6bf848d26b66614e05247c6f9c63e23e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>41</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
+<td>10</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
 <tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality()'><b>RecipePage_likeIconFunctionality</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/sugarcane-juice-black-wheat-muffins-cake, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Nithya mahindra, /07 Jan 2021/, Sugarcane juice black wheat muffins/cake, Yes,yes, Yes,yes</td>
-<td><div><pre>java.lang.AssertionError: expected [24] but found [25]
-	at com.dotKonnekt.pages.RecipePageFinal.LikeIconfunctionality(RecipePageFinal.java:168)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality(RecipePageTest.java:308)
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_UserFunctionalityVerification()'><b>HomePage_UserFunctionalityVerification</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;dot beauty&quot;. Current title: &quot;dotfashion&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63882/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95aa1298a65e2282a67eef527300c17d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dotKonnektMobile.actionDrivers.Action.explicitWaitbyTitle(Action.java:784)
+	at com.dotKonnektMobile.pages.CommonPagedetails.UserButtonFunctionality(CommonPagedetails.java:138)
+	at com.dotKonnektMobile.tests.HomePageTest.HomePage_UserFunctionalityVerification(HomePageTest.java:113)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace216112262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace216112262'><pre>java.lang.AssertionError: expected [24] but found [25]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.dotKonnekt.pages.RecipePageFinal.LikeIconfunctionality(RecipePageFinal.java:168)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality(RecipePageTest.java:308)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1080517451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1080517451'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;dot beauty&quot;. Current title: &quot;dotfashion&quot; (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63882}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63882/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 95aa1298a65e2282a67eef527300c17d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.dotKonnektMobile.actionDrivers.Action.explicitWaitbyTitle(Action.java:784)
+	at com.dotKonnektMobile.pages.CommonPagedetails.UserButtonFunctionality(CommonPagedetails.java:138)
+	at com.dotKonnektMobile.tests.HomePageTest.HomePage_UserFunctionalityVerification(HomePageTest.java:113)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -392,16 +213,16 @@ Session ID: 6bf848d26b66614e05247c6f9c63e23e
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -413,207 +234,62 @@ Session ID: 6bf848d26b66614e05247c6f9c63e23e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>29</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
+<td>10</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality()'><b>RecipePage_likeIconFunctionality</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/fudgy-healthy-chocolate-squares-no-sugar-no-maida-no-dairy, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Wellcure, /05 Feb 2021/, Fudgy Healthy Chocolate Squares – no sugar, no maida, no dairy!, No, yes,no</td>
-<td><div><pre>java.lang.AssertionError: expected [23] but found [24]
-	at com.dotKonnekt.pages.RecipePageFinal.LikeIconfunctionality(RecipePageFinal.java:168)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality(RecipePageTest.java:308)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace466983810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace466983810'><pre>java.lang.AssertionError: expected [23] but found [24]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.dotKonnekt.pages.RecipePageFinal.LikeIconfunctionality(RecipePageFinal.java:168)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_likeIconFunctionality(RecipePageTest.java:308)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>21</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_OurStorySection()'><b>HomePage_OurStorySection</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>6</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
 <tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality()'><b>RecipePage_bookMarkIconFunctionality</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/paneer-butter-masala-recipe, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Avitha P K, /20 Dec 2022/, Paneer Butter Masala Recipe, yes,yes, yes,no</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 38.721
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b46ab805606500c6bc8de935d4e8e4ff, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/recipe/paneer-butter-masala-recipe}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61998}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61998/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b46ab805606500c6bc8de935d4e8e4ff
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality(RecipePageTest.java:295)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1073839768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1073839768'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 38.721
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b46ab805606500c6bc8de935d4e8e4ff, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/recipe/paneer-butter-masala-recipe}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61998}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61998/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b46ab805606500c6bc8de935d4e8e4ff
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_bookMarkIconFunctionality(RecipePageTest.java:295)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>40</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_PageHeaderVerification()'><b>HomePage_PageHeaderVerification</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>3</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
 <tr>
-<td title='com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection()'><b>RecipePage_AddCommentinCommentSeection</b><br>Test class: com.dotKonnekt.tests.RecipePageTest<br>Parameters: RecipePage, RecipePage, Chrome, https://develop.d1fzm6olmw007.amplifyapp.com/recipe/paneer-butter-masala-recipe, SKIN,HAIR,MAKEUP,FRAGRANCE,WELLNESS,STYLE, Avitha P K, /20 Dec 2022/, Paneer Butter Masala Recipe, yes,yes, yes,no</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.081
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [98ec0ef82604a981a06c4f794929f1a6, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61808/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 98ec0ef82604a981a06c4f794929f1a6
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection(RecipePageTest.java:277)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1752829504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1752829504'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 39.081
-  (Session info: chrome=110.0.5481.177)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [98ec0ef82604a981a06c4f794929f1a6, get {url=https://develop.d1fzm6olmw007.amplifyapp.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\garvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61808}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61808/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 98ec0ef82604a981a06c4f794929f1a6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.dotKonnekt.base.BaseClass.launchApp_V1(BaseClass.java:92)
-	at com.dotKonnekt.tests.RecipePageTest.RecipePage_AddCommentinCommentSeection(RecipePageTest.java:277)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>40</td>
-<td>com.dotKonnekt.tests.RecipePageTest@51dcb805</td></tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_aboveAboutUsSection()'><b>HomePage_aboveAboutUsSection</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>6</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+<tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.TitleVerification()'><b>TitleVerification</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>3</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+<tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_CartFucntionalityVerification()'><b>HomePage_CartFucntionalityVerification</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>7</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+<tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_shoutOutFromCustomers()'><b>HomePage_shoutOutFromCustomers</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>13</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+<tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_SendAMessageFunctionalityGuestUser()'><b>HomePage_SendAMessageFunctionalityGuestUser</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>20</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+<tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_discountVoucherSection()'><b>HomePage_discountVoucherSection</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>3</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
+<tr>
+<td title='com.dotKonnektMobile.tests.HomePageTest.HomePage_askOurExpertSection()'><b>HomePage_askOurExpertSection</b><br>Test class: com.dotKonnektMobile.tests.HomePageTest<br>Parameters: Home Page, dot beauty, ChromeMobile, https://uidotfashion.sangria.tech/</td>
+<td></td>
+<td>4</td>
+<td>com.dotKonnektMobile.tests.HomePageTest@3a52dba3</td></tr>
 </table><p>
 </body>
 </html>

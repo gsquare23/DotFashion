@@ -14,10 +14,10 @@
     <protocol>https</protocol>
 
     <!-- title of the document -->
-    <documentTitle>RecipePage Report</documentTitle>
+    <documentTitle>dotV1_Report</documentTitle>
 
     <!-- reporta name - displayed at top-nav -->
-    <reportName class='report-name'> My Report
+    <reportName class='report-name'> dotV1_Report
     <![CDATA[
             <img  src='C:\Users\garvi\eclipse-workspace\RecipePage2\Logo\recipe-logo.png' />           
         ]]>              
